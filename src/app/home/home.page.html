@@ -1,14 +1,28 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+<ion-header mode="md">
+  <ion-toolbar color="dark">
+    <ion-title class="appTitle" color="light">YourTodo</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+
+    <ion-list mode="md" inset="false" lines="full">
+      <ion-item color="light" mode="md" (click)="goToTodoDetail(todoObj)" *ngFor="let todoObj of todoData">
+        <ion-text mode="md" class="ion-margin-bottom">
+          <label style="color: #333 ; font-weight: 600">{{todoObj.title}}</label>
+          <span [ngStyle]="{'color':'#FF537B'}">{{todoObj.pendingTodoListCount}} Pending </span>
+          <span [ngStyle]="{'color':'#5BBA95'}">{{todoObj.completedTodoListCount}} Completed</span>
+        </ion-text>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-fab mode="md" vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button mode="md" color="dark" (click)="goToAddTodo()">
+        <ion-icon name="create"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+
 </ion-content>

@@ -1,1 +1,28 @@
 
+:root {
+
+    --ion-background-color : #f9f9f9;
+
+}
+
+ion-item {
+    --min-height : 100px;
+
+    ion-text {
+        padding-top: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight:500; 
+        }
+
+        span {
+            font-size: 16px;
+
+        }
+
+    }
+
+}

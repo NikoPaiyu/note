@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Todo Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item mode="md">
+      <ion-label mode="md" position="floating">Username</ion-label>
+      <ion-input type="text" mode="md" autocomplete="off" placeholder="niko"></ion-input>
+    </ion-item>
+
+    <ion-item mode="md">
+        <ion-label mode="md" position="floating">Password</ion-label>
+        <ion-input type="password" mode="md" autocomplete="off" placeholder="niko"></ion-input>
+    </ion-item>
+
+    <ion-button color="primary" expand="block" mode="md" routerDirection="forward" type="button" (click)="login()" >Login</ion-button>
+
+    <ion-text>Dont have an account , PleaseRegister</ion-text>
+    <ion-button color="secondary" expand="block" mode="md" routerDirection="forward" type="button" >Register</ion-button>
+
+</ion-content>

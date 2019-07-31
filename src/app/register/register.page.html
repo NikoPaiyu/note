@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item mode="md">
+        <ion-label mode="md" position="floating">Username</ion-label>
+        <ion-input type="text" mode="md" autocomplete="off" placeholder="niko"></ion-input>
+      </ion-item>
+  
+      <ion-item mode="md">
+          <ion-label mode="md" position="floating">Password</ion-label>
+          <ion-input type="password" mode="md" autocomplete="off" placeholder="niko"></ion-input>
+      </ion-item>
+      
+      <ion-button color="primary" expand="block" mode="md" routerDirection="forward" type="button" (click)="register()" >Register</ion-button>
+
+</ion-content>
